@@ -1,3 +1,5 @@
+
+// ----------------------VALIDATION--------------------
 const validateUserName = () => {
   let text = document.querySelector("#text").value;
   if (text[0] === text[0].toUpperCase()) {
@@ -39,6 +41,7 @@ const confirmPassword = () => {
   }
 };
 
+// --------------------VALIDATION FOR SIGN UP FORM
 const signUpValidation = () => {
   if(validateUserName() && validatePassword() && confirmPassword() ){
     return true;
